@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <center>
+        <h1>WELCOME {{un}}</h1>
+        <div>
+            <form action="/budget">
+                <input type="submit" value="Set budget limit" method="POST">
+            </form>
+            <form action="/expense" method="POST">
+                <input type="submit" value="Add expense">
+            </form>
+            <form action="/view" method="POST">
+                <input type="submit" value="View details">
+            </form>
+            <form action="/logout">
+                <input type="submit" value="Log out">
+            </form>
+        </div>
+        </center>
+    </body>
+</html>
