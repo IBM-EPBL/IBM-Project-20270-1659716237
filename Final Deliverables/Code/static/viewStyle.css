@@ -1,0 +1,17 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("dashbg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.view{
+    margin-top: 10px;
+    width: 600px;
+    height: 50%;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: lightblue;
+    opacity: 0.6;
+}

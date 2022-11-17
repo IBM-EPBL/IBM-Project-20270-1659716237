@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='budgetStyle.css')}}"/>
+    </head>
+    
+    <body>
+        <center>
+        <div class="budget">
+            <h1>BUDGET</h1><br>
+            Your current budget:{{bd}}<br><br>
+           <form action="/set_budget" method="POST">
+            SET BUDGET<br> 
+            <input type="number" name="bd">
+            <input type="submit" value="SET"><br><br>
+            {{msg}}
+            </form>
+            <form action="/dashboard" method="POST">
+            <input type="submit" value="Go back">
+            </form>
+            </div>
+            </center>
+    </body>
+
+</html>>

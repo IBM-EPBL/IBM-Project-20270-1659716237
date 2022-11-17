@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='registerStyle.css')}}"/>
+    </head>
+    <body>
+        <h1>REGISTRATION</h1>
+        <form action="/insert" method="POST">
+            
+            Username: <input type = "text" name="un" maxlength="20" /> <br> <br>
+            Password: <input type = "text" name="ps" minlength="8"/> <br> <br>
+            Email:&nbsp &nbsp &nbsp  <input type = "text" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" /> <br> <br>
+            Phone No.:<input type = "text" name="ph" maxlength="10" minlength="10" /> <br> <br>
+            <h3>{{msg}}</h3>
+            <center><button class = "button1">Register</button></center>
+        </form>
+        <form action="/">
+            <center><button class = "button2"> Go back </button></center>
+        </form>
+    
+    </body>
+</html>
