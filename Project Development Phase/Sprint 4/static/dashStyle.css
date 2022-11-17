@@ -1,0 +1,41 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("dashbg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.dash{
+    margin-top: 150px;
+    width: 350px;
+    height: 50%;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: lightblue;
+    opacity: 0.6;
+}
+.txt{
+    margin-left: 320px;
+    margin-top: -350px;
+}
+.button1, .button2, .button3, .button4 {
+    background-color: #000000;
+    border: none;
+    color: rgb(115, 223, 250);
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 12px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .button1:hover {opacity: 1}
+  .button3.hover {opacity: 1}
+  .button4:hover {opacity: 1}
+  .button2:hover {opacity: 1}
+  

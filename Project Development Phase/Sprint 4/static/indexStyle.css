@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(38, 122, 128) ;
+    background-image: url("bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+}
+.index{
+        margin-top: 260px;
+}
+.innerIndex{
+    margin-top: 50px;
+    margin-right: 150px;
+}
+h2{
+    margin-right: 185px;
+}
+.button1, .button2 {
+  background-color: #000000;
+  border: none;
+  color: rgb(161, 231, 235);
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 12px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button1:hover {opacity: 1}
+.button2:hover {opacity: 1}
