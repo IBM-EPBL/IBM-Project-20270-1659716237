@@ -1,0 +1,25 @@
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='indexStyle.css')}}"/>
+</head>
+    <body >
+        <div class="index">
+        <center>
+        <h2>PERSONAL EXPENSE TRACKER</h2>
+        <div class ="innerIndex">
+        <form action="/login" method="POST">
+            Username: <input type = "text" name="un" maxlength="20" /> <br> <br>
+            Password:<input type = "text" name="ps" minlength="8"/> <br> <br>
+            <button class="button1">Login</button>
+        </form>
+        <form action="/register" method="POST">
+            <button class="button2" >Register</button>
+        </form>
+        <h4>{{msg}}</h4>
+        <br>
+    </div>
+    </center>
+    </div>
+    
+    </body>
+</html>

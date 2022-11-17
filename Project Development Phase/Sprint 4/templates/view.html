@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='viewStyle.css')}}"/>
+    </head>
+    <body>  
+            <center>
+            <form action="/dashboard" method="POST">
+                    <div class="view">
+                    
+                    <h1 >PROFILE</h1><br>
+                    <h3 align="left">USERNAME :{{USERNAME}}</h3>
+                    <h3 align="left">EMAIL :{{EMAIL}}</h3>
+                    <h3 align="left">CONTACTS :{{CONTACT}}</h3>
+                    <h3 align="left">BUDGET :{{BUDGET}}</h3>
+                    <h3 align="left">EXPENSE :{{EXPENSE}}</h3>
+                    <h3 align="left">STATUS :{{msg}}</h3>
+                    </div><br>
+                    <div class="view">
+                    <h3>LAST FEW TRANSACTIONS</h3>
+                    <table>
+                        <tr>
+                            <th>CATEGORY</th>
+                            <th>EXPENSE</th>
+                            <th>DATE</th>
+                        </tr>
+                    
+                    {% for row in arr%}
+                    <tr>
+                        <td>{{row['CATEGORY']}}</td>
+                        <td>{{row['EXPENSE']}}</td>
+                        <td>{{row['DATE']}}</td>
+                    </tr>
+                    
+                    {% endfor%}
+                    </table>
+
+                    <input type="submit" value="Go back">
+                </div>
+                </form></center>    
+    </body>
+</html>

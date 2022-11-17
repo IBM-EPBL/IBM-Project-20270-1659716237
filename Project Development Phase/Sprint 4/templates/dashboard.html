@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='dashStyle.css')}}"/>
+
+    </head>
+    <body>
+        <center>
+        <div class="dash">
+        <strong><h1>WELCOME {{un}}</h1></strong>
+        <div>
+            <form action="/view" method="POST">
+                <button class="button3">Profile</button>
+            </form>
+            
+            <form action="/expense" method="POST">
+                <button class="button2">Add expense</button>
+            </form>
+            <form action="/budget" method="POST">
+                <button class="button1">Budget limit</button>
+            </form>
+            
+            <form action="/logout">
+                <button class="button4">Logout</button>
+            </form>
+        </div>
+        </div>
+    </center>
+    </body>
+</html>
